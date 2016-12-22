@@ -20,8 +20,8 @@ public class FishingGame {
 		System.out.printf("Day %d\n",counter);
 		System.out.println("You are running low on funds.");
 		System.out.println("You tried finding 'normal' jobs, but there were none available.");
-		System.out.println("You decided to create a makeshift raft, and set out into the ocean.");
-		System.out.println("You have a fishing line tied to a wooden dowel rod as a crude fishing rod.");
+		System.out.println("You decided to create a makeshift rowboat, and set out into the ocean.");
+		System.out.println("You have a fishing line tied to a wooden dowel as a crude fishing rod.");
 		System.out.println("What would you like for the area of the fishery?");
 		size = input.nextInt();
 		fishery = new int[size][size];
@@ -37,7 +37,8 @@ public class FishingGame {
 		String scoords[] = requestedCoords.split(",");
 		coords[0] = Integer.parseInt(scoords[0]);
 		coords[1] = Integer.parseInt(scoords[1]);
-		System.out.printf("You bring your boat to %d, %d.", coords[0], coords[1]);
+		System.out.printf("You bring your boat to %d, %d.\n", coords[0], coords[1]);
+		System.out.println("You cast the rod into the ocean.");
 		}
 	public static void createGrid (int size){
 		SecureRandom rand = new SecureRandom();
@@ -72,6 +73,6 @@ public class FishingGame {
 		System.out.printf("%n");
 	}
 	public static void fish(String [] coords, int size, int[][] fishery, double implement){
-		
+		coords[0]coords[1] ;
 	}
 }
